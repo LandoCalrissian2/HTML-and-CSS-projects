@@ -1,0 +1,461 @@
+.name-text {
+    font-family: 'Geostar', cursive;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    margin: auto;
+    display: inline-block;
+}
+/* scroll bar */
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(220, 231, 204); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: orange; 
+    -webkit-box-shadow: inset 0 0 6px blueviolet; 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+        background: yellow; 
+}
+/* end scroll */
+
+body {
+    background: url(../images/background.jpg) no-repeat;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
+}
+
+.push {
+    width: 100%;
+    display: block;
+    margin-top: 24em;
+    
+}
+
+#home {
+    margin-top: 10em;
+    z-index: 100;
+}
+
+.navbar-custom {
+    position: fixed;
+    margin-top: 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+}
+
+.intro {
+    text-align: center;
+    z-index: 1;
+}
+
+.h1-text {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 60px;
+}
+
+.h2-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+}
+
+.banner-pad {
+    padding: 50px !important;
+}
+
+.card-container {
+    max-width: 300px !important;
+}
+
+.home-placement {
+    padding-left: 60%
+}
+
+.about-image {
+    width: 250px;
+    height: 350px;
+}
+
+.home-background h5::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 50px;
+    background: #57d131;
+    z-index: 500;
+}
+
+.home-background {
+    background-color: white;
+}
+
+.home-background h5 {
+        text-decoration: underline;
+        -webkit-text-decoration-color: orange; /* safari still uses vendor prefix */
+        text-decoration-color: orange;
+}
+
+/* Language Animation */
+.experienceBanner {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+.language-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    background-color: var(--blue);
+    color: cornsilk;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #fff !important;
+    z-index: -1;
+}
+:root {
+    --size: 400px;
+    --blue: #aad5ff;
+    --lb: rgba(0, 0, 0, 0.5);
+  }
+  .container2 {
+    width: var(--size);
+    height: var(--size);
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 7px rgba(1, 1, 1, .7));
+    float: right;
+  }
+  .productImage {
+    grid-column: 1/span 2;
+    grid-row: 1 /span 2;
+    width: var(--size);
+    height: var(--size);
+    background-size: cover;
+    clip-path: polygon(
+      20% 20%,
+      50% 20%,
+      50% 20%,
+      80% 20%,
+      80% 50%,
+      80% 50%,
+      80% 80%,
+      50% 80%,
+      50% 80%,
+      20% 80%,
+      20% 50%,
+      20% 50%
+    );
+    transition: all 0.7s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  }
+  .shoeImg {
+    background-image: url(../images/cssLogo.png);
+    background-color: #148bff;
+  }
+  .shoeImg2 {
+    background-image: url(../images/htmlLogo.png);
+    background-color: #aace29;
+  }
+  .shoeImg3 {
+    background-image: url(../images/cSharpLogo.png);
+    background-color: #b3437b;
+  }
+  .shoeImg4 {
+    background-image: url(../images/reactLogo.png);
+    background-color: #b3437b;
+  }
+  .shoeImg5 {
+    background-image: url(../images/javascriptLogo.png);
+    background-color: #74b8c9;
+  }
+  .shoeImg6 {
+    background-image: url(../images/sqlLogo.jpg);
+    background-color: #74b8c9;
+  }
+  .shoeImg7 {
+    background-image: url(../images/nodejsLogo.png);
+    background-color: #475330;
+  }
+  .shoeImg8 {
+    background-image: url(../images/tenslorflowLogo.png);
+    background-color: #9451a8;
+  }
+  h4,
+  ul,
+  span {
+    padding: 0;
+    margin: 0;
+  }
+  .size,
+  .color2 {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-left: 1em;
+  }
+  .size ul li,
+  .color2 ul li {
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: none;
+    padding-left: 1em;
+  }
+  .color2 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .color2 ul li span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    display: inline-block;
+  }
+  .red {
+    background-color: red;
+  }
+  .yellow {
+    background-color: greenyellow;
+  }
+  .blue {
+    background-color: #0070ee;
+  }
+  .price {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  }
+  .price h4 {
+    margin-bottom: 8px;
+    color: #fff;
+  }
+  .price span {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    background-color: none;
+    margin-left: 40px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  .productName {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    z-index: 1;
+    transition: all 0.7s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .productImage:hover {
+    clip-path: polygon(
+      20% 0%,
+      50% 0%,
+      50% 20%,
+      100% 20%,
+      100% 50%,
+      80% 50%,
+      80% 100%,
+      50% 100%,
+      50% 80%,
+      0% 80%,
+      0% 50%,
+      20% 50%
+    );
+    transform: rotate(-15deg);
+    transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .productImage:hover ~ * {
+    opacity: 1;
+    transform: rotate(-15deg);
+    transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .credits{
+      color:white;
+      font-size: 1.2rem;
+      grid-column: 1 / -1 ;
+      justify-self: center;
+      text-align: center;
+  }
+  
+/* End language animation */
+
+/* Title animation */
+.animateme {
+  font-size: 100px;
+  color: #fff;
+  padding-top: 50em;
+}
+
+.box {
+  width:400px;
+  height:400px;
+  background-color:#aaaa00;
+  margin:150px auto;
+}
+
+
+/* End title animation */
+
+/* Contact Card
+html {
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  font-family: 'Heebo', sans-serif;
+  /* font-family: "Source Sans Pro", sans-serif; */
+  /* background-color: #ffffff; */
+/* } */ 
+.front-side,
+.back-side {
+  width: 390px;
+  height: 220px;
+  display: grid;
+  grid-template-columns: 2% 96% 2%;
+  grid-template-rows: 4% 92% 4%;
+  position: relative;
+  margin: 20px auto;
+  overflow: hidden;
+  box-shadow: 2px 5px 15px 0px #17161694;
+  background-color: #122529;  
+}
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(8, 50px);
+  grid-gap: 8px;
+  width: 150px;
+  height: 400px;
+  transform: rotate(-45deg);
+}
+.black {
+  background-color: #343536;
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 3;
+}
+.red1 {
+  background-color: #ffa500;
+  grid-row: 2 / span 5;
+}
+.red2 {
+  background-color: #ffa500;
+  grid-column: 2 / span 2;
+  grid-row: 4/7;
+}
+.green {
+  background-color: #ff6600;
+  grid-column: 2/4;
+  grid-row: 7/9;
+}
+
+.info-grid {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.363);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.432);
+  border-radius: 6px;
+  font-size: 0.7rem; /*12px;*/
+  display: grid;
+  grid-template-columns: 15px repeat(3, 1fr) 15px;
+  grid-template-rows: repeat(3, 1fr);
+  line-height: 1px;
+}
+.info-grid .name {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 1;
+  font-size: 1.2em;
+  letter-spacing: .1rem;
+  margin-top: 8px;
+}
+.info-grid .name h5{
+  font-weight: unset;
+}
+.info-grid .addr {
+  grid-column: 2 / span 2;
+  grid-row: 3;
+}
+
+.info-grid .phoneNo {
+  grid-column: 3 / span 2;
+  grid-row: 2;
+  text-align: end;
+}
+.info-grid .emailId {
+  grid-column: 3 / span 2;
+  grid-row: 3;
+  text-align: end;
+  font-size: 1.1em;
+}
+
+.back-side .name-tag {
+  grid-column: 1 / span 4;
+  grid-row: 2 / span 1;
+  align-self: center;
+  z-index: 2;
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.363);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.288);
+  font-size: 0.6rem; /*12px;*/
+  letter-spacing: .1rem;
+  text-align: center;
+}
+.name-tag h1,h3{
+  margin: 2px;
+  font-weight: unset;
+}
+.credits{
+  margin-top:40px;
+  text-align: center;
+  color: #343536;
+}
+
+/* End Contact card */
+
