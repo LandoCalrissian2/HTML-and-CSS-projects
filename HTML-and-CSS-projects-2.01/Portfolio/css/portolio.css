@@ -8,11 +8,6 @@ html {
     margin: auto;
     display: inline-block;
 }
-
-.modalContainer1 {
-  float: left;
-  z-index: 1000;
-}
 /* scroll bar */
 /* Let's get this party started */
 ::-webkit-scrollbar {
